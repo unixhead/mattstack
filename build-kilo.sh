@@ -9,11 +9,14 @@
 # matt@unixhead.org
 #
 
-
+#EDIT THESE VARIABLES!
+#This is the master password used for everything, you can set them individually below if you prefer.
 PASS="testpass"
+#Set the IP address of your openstack server here
 IP="10.0.0.240"
-#Network used to dish out IPs to hosts
+#Define the network used for hosted VMs
 NETWORK_CIDR="10.0.255.0/24"
+#Set the name of the network interface on your server
 INTERFACE="eth0"
 
 ADMIN_TOKEN=`openssl rand -hex 10`
